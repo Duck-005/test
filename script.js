@@ -42,6 +42,7 @@ function createGrid() {
         grid_element.style.height = `${600 / grid_size}px`
     
         grid.appendChild(grid_element)
+        // extra comment
     }
 
     const squares = document.querySelectorAll(".grid-element")
@@ -101,3 +102,4 @@ window.onload = () => {
     createGrid()
     enableModeBtn(1)
 };
+
