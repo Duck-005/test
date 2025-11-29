@@ -1,0 +1,68 @@
+body {
+    background-color: dimgray;
+    font-family: 'JetBrains Mono', monospace, 'Courier New', Courier;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: rgb(43, 43, 43);
+    width: 100%;
+    text-align: center;
+}
+
+.content {
+    padding: 10px;
+    display: flex;
+    gap: 100px;
+}
+
+.side-bar {
+    padding: 20px;
+    background-color: rgb(84, 84, 84);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-start;
+    border-radius: 10px;
+    gap: 20px;
+}
+
+.grid-size-input {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(84, 84, 84);
+    flex: 3;
+    height: 600px;
+    width: 600px;
+    border: 1px solid black;
+}
+
+button {
+    /* The button tag doesn't inherit the font-family from the parent class/tag so overriding is needed*/
+    /* or font-family: inherit; */
+    font-family: 'JetBrains Mono', monospace, 'Courier New', Courier; 
+    border-radius: 5px;
+    height: 40px;
+}
+
+.grid-element {
+    background-color: rgb(189, 189, 189);
+    width: calc(600 / 16);
+    height: calc(600 / 16);
+}
+
+input {
+    height: 20px;
+}
